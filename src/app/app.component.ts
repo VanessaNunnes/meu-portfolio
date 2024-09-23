@@ -1,17 +1,17 @@
+import { NgClass } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
-  template: `
-    <h1>Welcome to {{title}}!</h1>
-
-    <router-outlet />
-  `,
-  styles: [],
+  imports: [NgClass],
+  templateUrl: "app.component.html",
+  styleUrl: "app.component.scss"
 })
-export class AppComponent {
-  title = 'meu-portfolio';
+export class AppComponent { 
+  public colapsarNavbar : boolean = false;
+
+
+
 }
